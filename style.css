@@ -6,176 +6,22 @@ Date Modified: Feb 17, 2023
 /*Import font family from google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*Table layout for div*/
-.column{
-  float: left;
-}
-
-
 body{ /*Set global font-family for body tag*/
   font-family: 'Montserrat', sans-serif;
-}
-
-.container_heading{ /*Set attributes for container_heading class*/
-  font-size: 25px; /*Set font size*/
-  color: #1E1B16; /*Set font color*/
-  padding-left: 15px; /*Set element padding*/
-  font-variation-settings: 'wght' 800; /*Since font is a variable font, "font-variation-settings: 'wght' x; is used*/
-}
-
-.container{ /*Set attributes for container class*/
-  border-radius: 15px; /*Set border radius*/
-  background-color: #FFDAD3; /*Set background-color*/
-  margin: 5px; /*Set element margin*/
-  padding: 15px;
-  width: 650px; /*Set element width*/
-}
-
-.customization_heading{ /*Set attributes for customization_heading class*/
-  padding-right: 15px;
-  padding-bottom: 15px;
-  font-size: 20px;
-  writing-mode: vertical-rl; /*Set writing-mode*/
-  transform: rotate(180deg); /*Set transform*/
-  font-variation-settings: 'wght' 800; 
-}
-
-.customization{ /*Set attributes for customization class*/
-  font-size: 15px;
+  background-color: #F5F5F7;
 }
 
 #title{ /*Set attributes for title id*/
 padding: 20px;
-color: #FFFFFF;
+color: #1D1D1F;
 font-size: 50px;
 font-variation-settings: 'wght' 900;
-}
-
-form{ /*Set attributes for form tag*/
-  color: #410000;
-  justify-content: center; /*Set justify-content*/
-  margin: auto;
-  position: relative; /*Set position*/
-  display: flex; /*Set display mode*/
-
-
-}
-
-/*Set attributes for input and select tags*/
-input[type=text], input[type=number], input[type=tel], input[type=email], input[type=date], input[type=time], select{ 
-  padding: 5px 10px;
-  margin: 8px 0;
-  width: 63.5%;
-  display: inline-block;
-  border: 2px solid #79747E; /*Set border*/
-  border-radius: 4px;
-  font-family: 'Montserrat', sans-serif;
-
 }
 
 label{ /*Set attributes for label tags*/
   color: #410000;
   width: 30%;
-  float: left;
   font-variation-settings: 'wght' 600;
   padding: 12px 12px 12px 0;
   display: inline-block;
-}
-
-input[type=submit]{ /*Set attributes for form submit*/
-  font-family: 'Montserrat', sans-serif;
-  font-variation-settings: 'wght' 600;
-  width: 100px;
-  background-color: #4CAF50;
-  color: white;
-  margin: 5px;
-  padding: 14px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer; /*Set cursor*/
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /*Set box-shadow*/
-}
-
-input[type=reset]{ /*Set attributes for form reset*/
-  color: #B3261E;
-  font-family: 'Montserrat', sans-serif;
-  font-variation-settings: 'wght' 600;
-  background-color: transparent;
-  width: 100px;
-  margin: 5px;
-  padding: 14px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover{ /*Set attributes for form submit on mouse hover*/
-  background-color: #45A049;
-}
-
-input[type=reset]:hover{ /*Set attributes for form reser on mouse hover*/
-  color: #F9DEDC;
-  background-color: rgba(140, 29, 24, 0.1);
-}
-
-#buttons{ /*Set attributes for buttons id*/
-  float: right; /*Set float*/
-}
-
-#blob_title{ /*Set transform attributes for blob_title id*/
-  position: fixed;
-  top: -430px;
-  left: -90px;
-  width: 50vmax;
-  z-index: -1;
-  animation: move 10s ease-in-out infinite;
-  transform-origin: 50% 50%;
-  overflow: hidden;
-
-}
-
-#blob1{ /*Set transform attributes for blob1 id*/
-  position: fixed;
-  top: 200px;
-  left: 700px;
-  width: 75vmax;
-  z-index: -2;
-  animation: move 10s ease-in-out infinite;
-  overflow: hidden;
-}
-
-#blob2{ /*Set transform attributes for blob2 id*/
-  position: fixed;
-  top: -750px;
-  left: -400px;
-  width: 150vmax;
-  z-index: -3;
-  animation: move 10s ease-in-out infinite;
-  overflow: hidden;
-}
-
-@keyframes move{ /*Animate move using @keyframes rule*/
-  0%   { transform: scale(1.2, 0.5) rotate(110deg); }
-  50%  { transform: scale(1.5, 0.5) rotate(290deg); }
-  100% { transform: scale(1.2, 0.5) rotate(470deg); }
-}
-
-@media screen and (max-width: 1525px){ /*Change various attributes when screen is 1525px wide or less using @media rule*/
-  #blob_title, #blob1, #blob2 { /*Hide blobs*/
-    position: absolute;
-    display: none;
-  }
-  #title { /*Change color of title id*/
-    color: #9D4136;
-  }
-  body{ /*Change background-color of body tag*/
-    background-color: #F9F4E4;
-  }
-  .column{ /*Change float of column class*/
-    float: none;
-  }
-  input[type=reset]:hover { /*Change color and background color of form reset's on hover state*/
-    color: #FFFFFF;
-    background-color: rgba(179, 38, 30, .5);
-  }
 }
